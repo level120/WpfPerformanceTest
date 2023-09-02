@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace PerformanceWpfApp
@@ -16,7 +16,6 @@ namespace PerformanceWpfApp
             _internalGpus = new HashSet<string>
             {
                 "Intel(R) Iris(R) Xe Graphics",
-
             };
 
             SetKnownIssueDevices();

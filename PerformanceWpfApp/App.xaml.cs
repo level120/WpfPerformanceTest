@@ -1,4 +1,5 @@
-﻿using System.Windows.Media;
+using System.Threading.Tasks;
+using System.Windows.Media;
 using System.Windows;
 using System.Windows.Interop;
 
@@ -16,6 +17,8 @@ namespace PerformanceWpfApp
             RenderCapability.TierChanged += (_, __) => OptimizeRenderOptions();
 
             OptimizeRenderOptions();
+
+            Task.Delay(3000).Wait();
         }
 
         private void OptimizeRenderOptions()
